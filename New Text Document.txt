@@ -1,0 +1,81 @@
+private void PrintDirectly() 
+        { 
+            try 
+            { 
+                this.Cursor = Cursors.WaitCursor; 
+
+                // «” ‰”«Œ «· ﬁ—Ì— 
+                Report.SalesBill.OneSalesBill MyRep = new Report.SalesBill.OneSalesBill(); 
+
+                // «‰‘«¡ „ €Ì— Ì„À· ‰Ê⁄ «·›Ê—„«  PDF 
+                PdfFormatOptions PDF_F_OPTION = new PdfFormatOptions(); 
+
+                // «·≈⁄·«‰ ⁄‰ „ €Ì— Ì„À·  ’œÌ— «· ﬁ—Ì— 
+                ExportOptions export = new ExportOptions(); 
+
+                // «·≈⁄·«‰ ⁄‰ „ €Ì— Ì„À· „ﬂ«‰ Õ›Ÿ Â–« «· ﬁ—Ì— 
+                DiskFileDestinationOptions dfoption = new DiskFileDestinationOptions(); 
+
+                // „ €Ì— Ì„À· „”«— «·»—‰«„Ã À„ «‰‘«¡ ›Ê·œ— ÃœÌœ »«”„ —Ì»Ê—  
+                string ReportPath = Application.StartupPath + "\\Report\\"; 
+
+                int i = 0; 
+                // «· √ﬂœ »√‰ «·„”«— €Ì— „ÊÃÊœ ... ⁄‰œÂ« ‰‰‘√ ÃœÌœ 
+                if (Directory.Exists(ReportPath) == false) 
+                { 
+                    Directory.CreateDirectory(ReportPath); 
+
+                    // Ê÷⁄ «· ﬁ—Ì— »„ﬂ«‰ „Ã·œ «·Õ›Ÿ „⁄ «·≈⁄·«‰ ⁄‰ «”„ «·„·› «·ÃœÌœ Ê’Ì€ Â 
+                    dfoption.DiskFileName = ReportPath + "›« Ê—… »Ì⁄ (" + i + ").pdf"; 
+                } 
+                else 
+                { 
+                    // Ê÷⁄ «· ﬁ—Ì— »„ﬂ«‰ „Ã·œ «·Õ›Ÿ „⁄ «·≈⁄·«‰ ⁄‰ «”„ «·„·› «·ÃœÌœ Ê’Ì€ Â «–« ﬂ«‰ „ÊÃÊœ 
+                    // Â‰« ‰‰‘√ Ã„·… ·Ê» ·· √ﬂœ »√‰ «·≈”„ „ÊÃÊœ ›≈–« ﬂ«‰ „ÊÃÊœ Ì“Ìœ ⁄·Ì «·«”„ 1 Ê«–« ·« Ì⁄ÿÌÂ 0 
+
+                    for (int a = 1; ; ++a) 
+                    { 
+                        string fullpath = ReportPath + "›« Ê—… »Ì⁄ (" + a + ").pdf"; 
+                        if (!File.Exists(fullpath)) 
+                        { 
+                            dfoption.DiskFileName = ReportPath + "›« Ê—… »Ì⁄ (" + a + ").pdf"; 
+                            break; 
+                        } 
+                    } 
+
+                } 
+
+
+                // —»ﬂ „ €Ì— «· ’œÌ— » ’œÌ— «· ﬁ—Ì— 
+                export = MyRep.ExportOptions; 
+
+                // —»ÿ „ﬂ«‰ «·„Ã·œ „⁄ «· ﬁ—Ì— 
+                export.ExportDestinationType = ExportDestinationType.DiskFile; 
+
+                // —»ÿ «·›Ê—„«  »«·„” ‰œ 
+                export.ExportFormatType = ExportFormatType.PortableDocFormat; 
+
+                // ‰Ê⁄ ›Ê—„«  «·»Ì œÌ «› 
+                export.ExportFormatOptions = PDF_F_OPTION; 
+
+                // —»ÿ «·„”«— »«· ﬁ—Ì— 
+                export.ExportDestinationOptions = dfoption; 
+
+                //  ÕœÌÀ «· ﬁ—Ì— 
+                MyRep.Refresh(); 
+
+                int id = Convert.ToInt32(TxOrderID.Text); 
+                MyRep.SetParameterValue("@ID", id); 
+
+                // √„— «· ’œÌ— 
+                MyRep.Export(); 
+
+                this.Cursor = Cursors.Default; 
+                MessageBox.Show(" „  ’œÌ— «· ﬁ—Ì— «·Ì „·› »Ì œÌ ≈› »‰Ã«Õ", "⁄„·Ì… «· ’œÌ—", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            } 
+            catch 
+            { 
+                this.Cursor = Cursors.Default; 
+                return; 
+            } 
+        }  
