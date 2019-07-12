@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
@@ -179,7 +179,6 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.picLogo1 = new DevExpress.XtraEditors.PictureEdit();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
@@ -205,7 +204,6 @@
             this.pnlSkins.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
             this.galleryControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -220,6 +218,7 @@
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
+            this.ribbon.SearchEditItem,
             this.barButtonItem1,
             this.btnCategories,
             this.btnAddStore,
@@ -322,9 +321,9 @@
             this.repositoryItemPopupContainerEdit2,
             this.repositoryItemPictureEdit1,
             this.repositoryItemCalcEdit1});
-            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
+            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(1196, 166);
+            this.ribbon.Size = new System.Drawing.Size(1196, 153);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
@@ -655,6 +654,7 @@
             this.Total_Amount_Pur.ItemAppearance.Pressed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.Total_Amount_Pur.ItemAppearance.Pressed.Options.UseFont = true;
             this.Total_Amount_Pur.Name = "Total_Amount_Pur";
+            this.Total_Amount_Pur.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // TotalPur
             // 
@@ -675,6 +675,7 @@
             this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem1.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // TodaySales
             // 
@@ -718,9 +719,9 @@
             this.barButtonItem35.Id = 48;
             this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
             this.barButtonItem35.Name = "barButtonItem35";
-            toolTipTitleItem2.Text = "أخبر معارفك وأصدقائك عن برامج واى إن :)";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.barButtonItem35.SuperTip = superToolTip2;
+            toolTipTitleItem1.Text = "أخبر معارفك وأصدقائك عن برامج واى إن :)";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.barButtonItem35.SuperTip = superToolTip1;
             this.barButtonItem35.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem35_ItemClick);
             // 
             // barButtonItem36
@@ -755,6 +756,7 @@
             this.barStaticItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.barStaticItem3.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem3.Name = "barStaticItem3";
+            this.barStaticItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // UserName
             // 
@@ -775,6 +777,7 @@
             this.barStaticItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.barStaticItem5.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem5.Name = "barStaticItem5";
+            this.barStaticItem5.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // UserType
             // 
@@ -814,6 +817,7 @@
             this.barStaticItem4.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem4.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barStaticItem4.Name = "barStaticItem4";
+            this.barStaticItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barStaticItem6
             // 
@@ -1336,11 +1340,11 @@
             this.navBarTwitter,
             this.navBarWebsite,
             this.navBarPhone});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 166);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 153);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 163;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl1.Size = new System.Drawing.Size(163, 511);
+            this.navBarControl1.Size = new System.Drawing.Size(163, 524);
             this.navBarControl1.TabIndex = 3;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -1502,8 +1506,6 @@
             // galleryControl1
             // 
             this.galleryControl1.Controls.Add(this.galleryControlClient1);
-            this.galleryControl1.DesignGalleryGroupIndex = 0;
-            this.galleryControl1.DesignGalleryItemIndex = 0;
             // 
             // 
             // 
@@ -1564,20 +1566,6 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.btnCategories);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "المخازن و المجموعات";
-            // 
-            // picLogo1
-            // 
-            this.picLogo1.EditValue = ((object)(resources.GetObject("picLogo1.EditValue")));
-            this.picLogo1.Location = new System.Drawing.Point(795, 385);
-            this.picLogo1.MenuManager = this.ribbon;
-            this.picLogo1.Name = "picLogo1";
-            this.picLogo1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo1.Properties.Appearance.Options.UseBackColor = true;
-            this.picLogo1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picLogo1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.picLogo1.Properties.ZoomPercent = 70D;
-            this.picLogo1.Size = new System.Drawing.Size(213, 92);
-            this.picLogo1.TabIndex = 11;
             // 
             // imageList1
             // 
@@ -1678,7 +1666,6 @@
             this.Controls.Add(this.pnlPhone);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.imageSlider1);
-            this.Controls.Add(this.picLogo1);
             this.Controls.Add(this.pnlSkins);
             this.Controls.Add(this.navBarControl1);
             this.Controls.Add(this.ribbonStatusBar);
@@ -1713,7 +1700,6 @@
             this.pnlSkins.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
             this.galleryControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -1872,7 +1858,6 @@
         public DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         public DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         public DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
-        private DevExpress.XtraEditors.PictureEdit picLogo1;
         private System.Windows.Forms.ImageList imageList1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
