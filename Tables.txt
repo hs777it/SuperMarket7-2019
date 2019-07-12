@@ -56,4 +56,3 @@ CREATE TABLE Tb_Users(
 	M49 bit NULL,
 	M50 bit NULL
 )
-
