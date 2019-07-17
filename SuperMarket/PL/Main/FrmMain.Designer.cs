@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
@@ -714,9 +714,9 @@
             this.barButtonItem35.Id = 48;
             this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
             this.barButtonItem35.Name = "barButtonItem35";
-            toolTipTitleItem1.Text = "أخبر معارفك وأصدقائك عن برامج واى إن :)";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.barButtonItem35.SuperTip = superToolTip1;
+            toolTipTitleItem5.Text = "أخبر معارفك وأصدقائك عن برامج واى إن :)";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.barButtonItem35.SuperTip = superToolTip5;
             this.barButtonItem35.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem35_ItemClick);
             // 
             // barButtonItem36
@@ -1320,7 +1320,7 @@
             // navBarControl1
             // 
             this.navBarControl1.ActiveGroup = this.navBarGroup3;
-            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1,
             this.navBarGroup2,
@@ -1335,7 +1335,7 @@
             this.navBarTwitter,
             this.navBarWebsite,
             this.navBarPhone});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 164);
+            this.navBarControl1.Location = new System.Drawing.Point(1031, 164);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 163;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
@@ -1492,7 +1492,7 @@
             // pnlSkins
             // 
             this.pnlSkins.Controls.Add(this.galleryControl1);
-            this.pnlSkins.Location = new System.Drawing.Point(818, 185);
+            this.pnlSkins.Location = new System.Drawing.Point(385, 194);
             this.pnlSkins.Name = "pnlSkins";
             this.pnlSkins.Size = new System.Drawing.Size(219, 114);
             this.pnlSkins.TabIndex = 7;
@@ -1577,7 +1577,7 @@
             this.pnlPhone.Controls.Add(this.label2);
             this.pnlPhone.Controls.Add(this.label1);
             this.pnlPhone.Controls.Add(this.label5);
-            this.pnlPhone.Location = new System.Drawing.Point(167, 330);
+            this.pnlPhone.Location = new System.Drawing.Point(867, 322);
             this.pnlPhone.Name = "pnlPhone";
             this.pnlPhone.Size = new System.Drawing.Size(158, 174);
             this.pnlPhone.TabIndex = 17;
@@ -1654,6 +1654,7 @@
             this.Name = "FrmMain";
             this.Ribbon = this.ribbon;
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "النظام";

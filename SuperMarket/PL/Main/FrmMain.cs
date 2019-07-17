@@ -883,7 +883,7 @@ namespace SuperMarket.PL.Main
             pnlSkins.Size = new Size(390, 250);
             galleryControl1.Size = new Size(375, 235);
             galleryControl1.Visible = true;
-            pnlSkins.Location = new Point(MousePosition.X-150,navBarControl1.Top);
+            pnlSkins.Location = new Point(ribbon.Location.X+200,navBarControl1.Top);
         }
 
 
@@ -926,9 +926,9 @@ namespace SuperMarket.PL.Main
 
         private void navBarPhone_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
-            // MessageBox.Show("يمكنك الاتصال على /n 0096560907666");
-            //pnlPhone.Left = this.Left + navBarPhone.NavBar.Left + +navBarPhone.NavBar.Width;
-            //pnlPhone.Top = navBarPhone.NavBar.Top + 100;
+
+            pnlPhone.Left = navBarControl1.Location.X - navBarPhone.NavBar.Width;
+            pnlPhone.Top = navBarControl1.Location.Y + navBarPhone.NavBar.Top;
             pnlPhone.Visible = !pnlPhone.Visible;
         }
 
