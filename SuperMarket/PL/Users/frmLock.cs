@@ -43,7 +43,6 @@ namespace SuperMarket.PL.Users
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //("HH:mm:ss tt")
             lblDate.Text = DateTime.Now.ToShortDateString();
             lblTime.Text = DateTime.Now.ToShortTimeString();
         }

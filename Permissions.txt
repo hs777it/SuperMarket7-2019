@@ -1,0 +1,55 @@
+////-----------------TabsRibbon
+RibbonBasic
+RibbonPurchaes
+RibbonSales
+RibbonPurchaseReturn
+RibbonSalesReturn
+RibbonActions
+RibbonCustomers
+RibbonSuppliers
+RibbonStoresCategories
+RibbonItems
+RibbonBarcode
+RibbonReceiptVoucher
+RibbonPaymentVoucher
+
+RibbonUsersManage
+RibbonDatabase
+////----------------ButtomsMain
+btnCompany
+btnPOSSettings
+//// =-=-=-= =-=-=-= =-=-=-= المبيعات والمشتريات =-=-=-= =-=-=-= =-=-=-= ////
+btnPurchaseOrder
+btnPurchaseManage
+btnAddStore
+btnCategories
+btnSales
+btnSalesManage
+btnSalesReturn
+btnSalesReturnManage
+btnPurchaseReturn
+btnPurchaseReturnManage
+btnSalesAction
+btnPurchaseAction
+/////// =-=-=-= =-=-=-= =-=-=-= العملاء و الموردين =-=-=-= =-=-=-= =-=-=-= ////
+btnCustomers
+btnAddCustomer
+btnSuppliers
+btnAddSupplier
+/////// =-=-=-= =-=-=-= =-=-=-= العملاء و الموردين =-=-=-= =-=-=-= =-=-=-= ////
+btnStores
+btnAddItem
+btnItems
+btnItemsReports
+btnReceiptVoucher
+btnPaymentVoucherManage
+btnPaymentVoucher
+btnReceiptVoucherManage
+BtnPOS
+btnPOSAction
+/////// =-=-=-= =-=-=-= =-=-=-= إعدادات النظام =-=-=-= =-=-=-= =-=-=-= ////
+btnUsers
+btnBackup
+btnRestore
+btnAutoBackup
+btnPermissions

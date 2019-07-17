@@ -181,8 +181,6 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlPhone = new DevExpress.XtraEditors.PanelControl();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -205,8 +203,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
             this.galleryControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlPhone)).BeginInit();
             this.pnlPhone.SuspendLayout();
             this.SuspendLayout();
@@ -321,9 +317,8 @@
             this.repositoryItemPopupContainerEdit2,
             this.repositoryItemPictureEdit1,
             this.repositoryItemCalcEdit1});
-            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(1196, 153);
+            this.ribbon.Size = new System.Drawing.Size(1194, 164);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
@@ -1316,11 +1311,11 @@
             this.ribbonStatusBar.ItemLinks.Add(this.UserType);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem4);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem6);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 677);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 665);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1196, 23);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1194, 35);
             // 
             // navBarControl1
             // 
@@ -1340,11 +1335,11 @@
             this.navBarTwitter,
             this.navBarWebsite,
             this.navBarPhone});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 153);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 164);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 163;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl1.Size = new System.Drawing.Size(163, 524);
+            this.navBarControl1.Size = new System.Drawing.Size(163, 501);
             this.navBarControl1.TabIndex = 3;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -1573,22 +1568,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // imageSlider1
-            // 
-            this.imageSlider1.Location = new System.Drawing.Point(514, 228);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(274, 135);
-            this.imageSlider1.TabIndex = 12;
-            this.imageSlider1.Text = "imageSlider1";
-            // 
-            // picLogo
-            // 
-            this.picLogo.Location = new System.Drawing.Point(574, 399);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(193, 61);
-            this.picLogo.TabIndex = 13;
-            this.picLogo.TabStop = false;
-            // 
             // pnlPhone
             // 
             this.pnlPhone.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -1661,11 +1640,9 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1196, 700);
+            this.ClientSize = new System.Drawing.Size(1194, 700);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.pnlPhone);
-            this.Controls.Add(this.picLogo);
-            this.Controls.Add(this.imageSlider1);
             this.Controls.Add(this.pnlSkins);
             this.Controls.Add(this.navBarControl1);
             this.Controls.Add(this.ribbonStatusBar);
@@ -1701,8 +1678,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
             this.galleryControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlPhone)).EndInit();
             this.pnlPhone.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1860,8 +1835,6 @@
         public DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private System.Windows.Forms.ImageList imageList1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
-        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
-        private System.Windows.Forms.PictureBox picLogo;
         private DevExpress.XtraEditors.PanelControl pnlPhone;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
